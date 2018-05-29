@@ -1,6 +1,6 @@
 # Installation
 
-#### For MAC
+#### For Mac:
 You need to have a installed and running docker environment and be a member of the `docker` group.
 
 1. Download Docker from Docker Store
@@ -29,7 +29,7 @@ Follow this for more information regading the docker installtion documentation :
 
 Done :) 
 
-#### For UBUNTU
+#### For Ubuntu:
 Prerequisites
 * 64-bit Ubuntu 16.04 server
 * Non-root user with sudo privileges Initial Setup Guide for Ubuntu 16.04 explains how to set this up.
@@ -60,9 +60,9 @@ sudo systemctl status docker
 ```
 Done :) 
 
-# Build
+# Build and Run Locally
 
-#### FOR Ubuntu
+#### For Ubuntu:
 
 1. Get this repo
 ```sh
@@ -83,7 +83,7 @@ $ docker run --rm -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v $HOME:/data:rw msconver
 ```
 Substitute `$HOME` with the directory holding your data. The directory is mounted at /data in your container, which is accessible as Z:\data in MSConvertGUI.
 
-#### FOR MAC
+#### For Mac:
 
 1. Get this repo
 ```sh
@@ -109,17 +109,23 @@ Substitute `$HOME` with the directory holding your data. The directory is mounte
 
 # Docker pull and run msconvertGUI
 
+#### For Mac:
 1. Pull msconvertGUI docker images from docker hub.
 ```sh
 $ docker pull kushalgupta/msconvertgui:0.1 
 ```
+2. Get this repo
+```sh
+$ git clone https://github.com/kushdtu/Elmaven-msconvertGUI-Docker
+$ cd Elmaven-msconvertGUI-Docker
+```
 
-2. give executable permission to run_msconvert.sh
+3. give executable permission to run_msconvert.sh
 ```sh
 $ chmod +x ./run_msconvert.sh
 ```
 
-3. Run msconvertGUI 
+4. Run msconvertGUI 
 ```sh
 $ ./run_msconvert.sh /your/folder/path/that/you/want/to/see/in/msconvert/browser
 
